@@ -1,0 +1,749 @@
+[
+  {
+    "name": "Azure Virtual Machines",
+    "description": "Provision Windows and Linux virtual machines in seconds with flexible configurations and scalable computing power on demand"
+  },
+  {
+    "name": "Azure App Service",
+    "description": "Create highly-available, infinitely-scalable cloud applications and APIs with a fully managed platform for building, deploying, and scaling web apps"
+  },
+  {
+    "name": "Azure Functions",
+    "description": "Serverless compute service that enables you to run event-driven code without managing infrastructure, paying only for execution time"
+  },
+  {
+    "name": "Azure Kubernetes Service (AKS)",
+    "description": "Fully managed Kubernetes container orchestration service that simplifies deployment, management, and operations of containerized applications"
+  },
+  {
+    "name": "Azure Container Instances",
+    "description": "Run Docker containers on-demand in a managed, serverless Azure environment without orchestrating infrastructure"
+  },
+  {
+    "name": "Azure Container Registry",
+    "description": "Managed Docker registry service for storing and managing private Docker container images and artifacts"
+  },
+  {
+    "name": "Azure Batch",
+    "description": "Cloud-scale job scheduling and compute management service for running large-scale parallel and high-performance computing applications"
+  },
+  {
+    "name": "Azure Virtual Machine Scale Sets",
+    "description": "Manage and scale up to thousands of identical, load-balanced Linux and Windows VMs automatically based on demand"
+  },
+  {
+    "name": "Azure Service Fabric",
+    "description": "Distributed systems platform for building and managing scalable, reliable microservices and container-based applications"
+  },
+  {
+    "name": "Azure Static Web Apps",
+    "description": "Streamlined full-stack development from source code to global high availability for modern web applications"
+  },
+  {
+    "name": "Azure Spring Apps",
+    "description": "Fully managed service for building and deploying Spring Boot applications with integrated monitoring and management"
+  },
+  {
+    "name": "Azure VMware Solution",
+    "description": "Run VMware workloads natively on Azure with seamless integration and migration capabilities"
+  },
+  {
+    "name": "Azure Dedicated Host",
+    "description": "Physical servers dedicated to your organization's use, providing control and compliance for workload placement"
+  },
+  {
+    "name": "Azure Red Hat OpenShift",
+    "description": "Fully managed Red Hat OpenShift service on Azure for deploying and managing containerized applications"
+  },
+  {
+    "name": "Azure Quantum",
+    "description": "Jump in and explore a diverse selection of quantum hardware, software, and solutions for quantum computing workloads"
+  },
+  {
+    "name": "Azure Virtual Desktop",
+    "description": "Cloud-based virtual desktop infrastructure service enabling secure remote access to Windows desktops and apps from anywhere"
+  },
+  {
+    "name": "Azure SQL Database",
+    "description": "Fully managed, intelligent SQL database in the cloud with built-in AI for performance optimization and automated scaling"
+  },
+  {
+    "name": "Azure Cosmos DB",
+    "description": "Globally distributed, multi-model database service with guaranteed low latency and high availability for mission-critical applications"
+  },
+  {
+    "name": "Azure Database for PostgreSQL",
+    "description": "Fully managed, intelligent, and scalable PostgreSQL database service with built-in high availability and security"
+  },
+  {
+    "name": "Azure Database for MySQL",
+    "description": "Fully managed, scalable MySQL database service with enterprise-grade security and performance"
+  },
+  {
+    "name": "Azure Database for MariaDB",
+    "description": "Deploy applications to the cloud with enterprise-ready, fully managed community MariaDB database service"
+  },
+  {
+    "name": "Azure SQL Managed Instance",
+    "description": "Modernize SQL Server applications with a managed, always-up-to-date SQL instance in the cloud with near 100% compatibility"
+  },
+  {
+    "name": "Azure Cache for Redis",
+    "description": "Fully managed in-memory database service with the latest Redis innovations for high-performance caching and data storage"
+  },
+  {
+    "name": "Azure Synapse Analytics",
+    "description": "Unlimited analytics service bringing together enterprise data warehousing and big data analytics with integrated Apache Spark"
+  },
+  {
+    "name": "Azure SQL Server on Virtual Machines",
+    "description": "Migrate SQL Server workloads to Azure VMs with full SQL Server compatibility and lower total cost of ownership"
+  },
+  {
+    "name": "Azure Database Migration Service",
+    "description": "Simplify your data migration to Azure databases with minimal downtime and comprehensive assessment tools"
+  },
+  {
+    "name": "Azure Confidential Ledger",
+    "description": "Tamper-proof, append-only ledger service for storing sensitive data records with cryptographic verification"
+  },
+  {
+    "name": "Azure Blob Storage",
+    "description": "Massively scalable object storage for unstructured data including text, binary data, media files, and backup archives"
+  },
+  {
+    "name": "Azure Files",
+    "description": "Fully managed file shares in the cloud accessible via SMB and NFS protocols for lift-and-shift scenarios"
+  },
+  {
+    "name": "Azure Queue Storage",
+    "description": "Messaging service for storing large numbers of messages accessible from anywhere via authenticated HTTP or HTTPS calls"
+  },
+  {
+    "name": "Azure Data Lake Storage",
+    "description": "Scalable and secure data lake for high-performance analytics workloads with hierarchical namespace capabilities"
+  },
+  {
+    "name": "Azure Managed Disks",
+    "description": "High-performance, durable block storage for Azure Virtual Machines with built-in replication and backup capabilities"
+  },
+  {
+    "name": "Azure NetApp Files",
+    "description": "Enterprise-grade Azure file shares powered by NetApp for high-performance, low-latency file workloads"
+  },
+  {
+    "name": "Azure Backup",
+    "description": "Simplified backup solution for all Azure workloads with centralized management and long-term retention"
+  },
+  {
+    "name": "Azure Archive Storage",
+    "description": "Cost-effective storage tier for rarely accessed data with long-term retention requirements"
+  },
+  {
+    "name": "Azure Data Box",
+    "description": "Physical data transfer solution for moving large amounts of data to Azure when network transfer isn't feasible"
+  },
+  {
+    "name": "Azure HPC Cache",
+    "description": "File caching service for high-performance computing workloads providing faster access to data"
+  },
+  {
+    "name": "Azure Storage Actions",
+    "description": "Automate data management tasks across Azure Storage with rule-based actions and lifecycle policies"
+  },
+  {
+    "name": "Azure Elastic SAN",
+    "description": "Cloud-native storage area network service providing scalable, cost-effective block storage for mission-critical workloads"
+  },
+  {
+    "name": "Azure Container Storage",
+    "description": "Purpose-built storage solution for containers offering persistent volumes and data management for containerized applications"
+  },
+  {
+    "name": "Azure Virtual Network",
+    "description": "Private network infrastructure in Azure enabling secure communication between Azure resources and on-premises networks"
+  },
+  {
+    "name": "Azure Load Balancer",
+    "description": "High-performance, low-latency Layer 4 load balancer for distributing traffic across multiple resources"
+  },
+  {
+    "name": "Azure Application Gateway",
+    "description": "Web traffic load balancer with web application firewall and SSL termination for application-level routing"
+  },
+  {
+    "name": "Azure VPN Gateway",
+    "description": "Secure cross-premises connectivity between Azure virtual networks and on-premises infrastructure"
+  },
+  {
+    "name": "Azure ExpressRoute",
+    "description": "Private, dedicated connections between Azure datacenters and on-premises infrastructure bypassing the public internet"
+  },
+  {
+    "name": "Azure DNS",
+    "description": "Host your DNS domains in Azure with high availability and fast DNS responses using global network of name servers"
+  },
+  {
+    "name": "Azure Front Door",
+    "description": "Modern cloud CDN providing fast, reliable, and secure access to applications with intelligent traffic routing"
+  },
+  {
+    "name": "Azure CDN",
+    "description": "Global content delivery network for caching and delivering content with low latency from edge locations worldwide"
+  },
+  {
+    "name": "Azure Traffic Manager",
+    "description": "DNS-based traffic routing service for distributing traffic across global Azure regions with automatic failover"
+  },
+  {
+    "name": "Azure Firewall",
+    "description": "Cloud-native network security service protecting Azure Virtual Network resources with threat intelligence"
+  },
+  {
+    "name": "Azure DDoS Protection",
+    "description": "Protection against distributed denial of service attacks with always-on monitoring and automatic mitigation"
+  },
+  {
+    "name": "Azure Bastion",
+    "description": "Fully managed service providing secure RDP and SSH access to virtual machines without public IP addresses"
+  },
+  {
+    "name": "Azure Private Link",
+    "description": "Access Azure services privately from your virtual network without traversing the public internet"
+  },
+  {
+    "name": "Azure Virtual WAN",
+    "description": "Unified networking service combining multiple networking, security, and routing functions into a single interface"
+  },
+  {
+    "name": "Azure Network Watcher",
+    "description": "Network monitoring and diagnostics service for monitoring, diagnosing, and gaining insights into Azure network health"
+  },
+  {
+    "name": "Azure Web Application Firewall",
+    "description": "Cloud-native web application firewall protecting web applications from common exploits and vulnerabilities"
+  },
+  {
+    "name": "Azure Firewall Manager",
+    "description": "Centralized security policy and route management for cloud-based security perimeters across multiple firewalls"
+  },
+  {
+    "name": "Azure Route Server",
+    "description": "Simplifies dynamic routing between network virtual appliances and Azure virtual networks"
+  },
+  {
+    "name": "Azure Virtual Network Manager",
+    "description": "Centrally manage virtual networks at scale with automated configuration and policy enforcement"
+  },
+  {
+    "name": "Azure Private 5G Core",
+    "description": "Deploy and manage private mobile networks with Azure infrastructure for enterprise connectivity"
+  },
+  {
+    "name": "Microsoft Entra ID",
+    "description": "Cloud-based identity and access management service providing single sign-on, multi-factor authentication, and conditional access"
+  },
+  {
+    "name": "Microsoft Entra Domain Services",
+    "description": "Managed domain services providing domain join, group policy, LDAP, and Kerberos authentication without managing domain controllers"
+  },
+  {
+    "name": "Azure AD External Identities",
+    "description": "Enable secure collaboration with external users, partners, and customers with customizable identity experiences"
+  },
+  {
+    "name": "Azure Information Protection",
+    "description": "Cloud-based solution for classifying, labeling, and protecting documents and emails based on sensitivity"
+  },
+  {
+    "name": "Azure Key Vault",
+    "description": "Safeguard and maintain control of cryptographic keys, secrets, and certificates used by cloud applications"
+  },
+  {
+    "name": "Azure Dedicated HSM",
+    "description": "Hardware security modules in Azure for cryptographic key management with exclusive customer control"
+  },
+  {
+    "name": "Azure Attestation",
+    "description": "Unified solution for remotely verifying the trustworthiness of platforms and integrity of binaries"
+  },
+  {
+    "name": "Microsoft Defender for Cloud",
+    "description": "Unified security management and advanced threat protection across hybrid cloud workloads"
+  },
+  {
+    "name": "Microsoft Sentinel",
+    "description": "Cloud-native SIEM and SOAR solution providing intelligent security analytics and threat intelligence"
+  },
+  {
+    "name": "Microsoft Defender for IoT",
+    "description": "Comprehensive IoT security solution protecting IoT and OT devices from threats across the device lifecycle"
+  },
+  {
+    "name": "Microsoft Copilot for Security",
+    "description": "AI-powered security analysis and response tool helping security teams defend against threats at machine speed"
+  },
+  {
+    "name": "Azure Content Safety",
+    "description": "AI-powered service detecting harmful user-generated and AI-generated content in applications"
+  },
+  {
+    "name": "Azure OpenAI Service",
+    "description": "Access powerful OpenAI language models including GPT-4, GPT-3.5, and DALL-E with Azure security and enterprise features"
+  },
+  {
+    "name": "Azure Machine Learning",
+    "description": "Enterprise-grade service for the end-to-end machine learning lifecycle including model training, deployment, and management"
+  },
+  {
+    "name": "Azure AI Services",
+    "description": "Collection of AI capabilities including vision, speech, language, and decision-making through simple API calls"
+  },
+  {
+    "name": "Azure AI Search",
+    "description": "Enterprise-grade search service with AI-powered indexing and retrieval for building search experiences"
+  },
+  {
+    "name": "Azure AI Foundry",
+    "description": "Unified platform for building, evaluating, and deploying AI applications with model catalog and tools"
+  },
+  {
+    "name": "Azure Bot Service",
+    "description": "Build, test, deploy, and manage intelligent bots that naturally interact with users across multiple channels"
+  },
+  {
+    "name": "Azure Cognitive Search",
+    "description": "AI-powered cloud search service for building rich search experiences over private heterogeneous content"
+  },
+  {
+    "name": "Azure Computer Vision",
+    "description": "AI service analyzing images and videos to extract information, identify objects, and read text"
+  },
+  {
+    "name": "Azure Custom Vision",
+    "description": "Easily customize computer vision models for your specific use case without deep AI expertise"
+  },
+  {
+    "name": "Azure Face API",
+    "description": "AI service detecting, recognizing, and analyzing human faces in images with privacy-focused features"
+  },
+  {
+    "name": "Azure Document Intelligence",
+    "description": "AI-powered service extracting text, key-value pairs, and tables from documents with pre-built and custom models"
+  },
+  {
+    "name": "Azure Speech Service",
+    "description": "Speech-to-text, text-to-speech, speech translation, and speaker recognition with customizable models"
+  },
+  {
+    "name": "Azure Language Service",
+    "description": "Natural language processing capabilities including sentiment analysis, entity recognition, and language understanding"
+  },
+  {
+    "name": "Azure Translator",
+    "description": "AI-powered text translation service supporting over 100 languages with neural machine translation"
+  },
+  {
+    "name": "Azure Video Indexer",
+    "description": "Extract meaningful insights from audio and video files using media AI and machine learning"
+  },
+  {
+    "name": "Azure Anomaly Detector",
+    "description": "Easily add anomaly detection capabilities to applications for monitoring time-series data"
+  },
+  {
+    "name": "Azure Personalizer",
+    "description": "AI service delivering personalized content experiences through reinforcement learning"
+  },
+  {
+    "name": "Azure Metrics Advisor",
+    "description": "AI-powered service for proactive monitoring and diagnosing anomalies in time series data"
+  },
+  {
+    "name": "Azure Immersive Reader",
+    "description": "Embed text reading and comprehension capabilities for users regardless of age or ability"
+  },
+  {
+    "name": "Azure Health Bot",
+    "description": "Build and deploy AI-powered health chatbots with built-in medical intelligence"
+  },
+  {
+    "name": "Azure Open Datasets",
+    "description": "Curated open datasets to accelerate machine learning model development with public domain data"
+  },
+  {
+    "name": "Azure Databricks",
+    "description": "Apache Spark-based analytics platform for big data and AI workloads with collaborative workspace"
+  },
+  {
+    "name": "Azure Data Factory",
+    "description": "Hybrid data integration service for creating, scheduling, and orchestrating ETL and ELT workflows"
+  },
+  {
+    "name": "Azure HDInsight",
+    "description": "Managed cloud Hadoop, Spark, R Server, HBase, and Storm clusters for big data analytics"
+  },
+  {
+    "name": "Azure Stream Analytics",
+    "description": "Real-time analytics service for processing fast streaming data from multiple sources simultaneously"
+  },
+  {
+    "name": "Azure Data Explorer",
+    "description": "Fast and highly scalable data exploration service for log and telemetry data analytics"
+  },
+  {
+    "name": "Azure Event Hubs",
+    "description": "Big data streaming platform and event ingestion service receiving and processing millions of events per second"
+  },
+  {
+    "name": "Azure Analysis Services",
+    "description": "Enterprise-grade analytics engine as a service for creating semantic data models for BI tools"
+  },
+  {
+    "name": "Azure Purview",
+    "description": "Unified data governance service for managing and governing on-premises, multi-cloud, and SaaS data"
+  },
+  {
+    "name": "Azure Data Share",
+    "description": "Securely share data with external organizations with centralized management and monitoring"
+  },
+  {
+    "name": "Power BI Embedded",
+    "description": "Embed fully interactive Power BI reports and dashboards into your applications with white-label capabilities"
+  },
+  {
+    "name": "Microsoft Graph Data Connect",
+    "description": "Secure, high-throughput connector copying Microsoft 365 productivity datasets into your Azure tenant"
+  },
+  {
+    "name": "Azure Chaos Studio",
+    "description": "Improve application resilience by deliberately injecting faults and simulating outages"
+  },
+  {
+    "name": "Microsoft Fabric",
+    "description": "Unified analytics platform connecting data sources and analytics services with AI-powered insights"
+  },
+  {
+    "name": "Azure DevOps",
+    "description": "Comprehensive DevOps toolchain for planning work, collaborating on code, and building and deploying applications"
+  },
+  {
+    "name": "Azure Pipelines",
+    "description": "Cloud-based CI/CD service for building, testing, and deploying to any platform and cloud"
+  },
+  {
+    "name": "Azure Repos",
+    "description": "Git repositories for source control with unlimited private repositories"
+  },
+  {
+    "name": "Azure Boards",
+    "description": "Agile planning tools for managing work across teams with Kanban boards, backlogs, and sprints"
+  },
+  {
+    "name": "Azure Artifacts",
+    "description": "Package management service for Maven, npm, NuGet, and Python packages with universal packages support"
+  },
+  {
+    "name": "Azure Test Plans",
+    "description": "Manual and exploratory testing tools with rich reporting and integrated test management"
+  },
+  {
+    "name": "Azure DevTest Labs",
+    "description": "Quickly create development and test environments while minimizing waste and controlling costs"
+  },
+  {
+    "name": "Azure Load Testing",
+    "description": "Cloud-based load testing service for generating high-scale load and identifying performance bottlenecks"
+  },
+  {
+    "name": "Azure API Center",
+    "description": "Centralized platform for discovering, managing, and consuming APIs across the organization"
+  },
+  {
+    "name": "GitHub Advanced Security for Azure DevOps",
+    "description": "Security scanning and remediation tools integrated into Azure DevOps workflows"
+  },
+  {
+    "name": "Microsoft Dev Box",
+    "description": "Cloud-based developer workstations with pre-configured development environments ready in minutes"
+  },
+  {
+    "name": "Azure Deployment Environments",
+    "description": "Enable developers to quickly spin up infrastructure with project-based templates and configurations"
+  },
+  {
+    "name": "Azure Managed Grafana",
+    "description": "Fully managed Grafana service for visualizing and analyzing telemetry and operational data"
+  },
+  {
+    "name": "Azure Lab Services",
+    "description": "Set up and manage lab environments for classrooms, training, and development scenarios"
+  },
+  {
+    "name": "Azure Playwright Testing",
+    "description": "Cloud-based testing service for end-to-end web testing with Playwright framework"
+  },
+  {
+    "name": "Azure IoT Hub",
+    "description": "Central message hub for bi-directional communication between IoT applications and connected devices"
+  },
+  {
+    "name": "Azure IoT Central",
+    "description": "Fully managed IoT application platform for connecting, monitoring, and managing IoT assets at scale"
+  },
+  {
+    "name": "Azure IoT Edge",
+    "description": "Deploy cloud intelligence and analytics directly on IoT edge devices for real-time insights"
+  },
+  {
+    "name": "Azure Digital Twins",
+    "description": "Create digital representations of physical environments, assets, and processes for IoT solutions"
+  },
+  {
+    "name": "Azure Sphere",
+    "description": "Comprehensive IoT security solution with secured hardware, OS, and cloud components"
+  },
+  {
+    "name": "Azure RTOS",
+    "description": "Real-time operating system for microcontroller-based IoT devices with small footprint"
+  },
+  {
+    "name": "Azure Time Series Insights",
+    "description": "IoT analytics platform for operational intelligence over time-series data"
+  },
+  {
+    "name": "Azure Maps",
+    "description": "Geospatial APIs for adding maps, spatial analytics, and mobility solutions to applications"
+  },
+  {
+    "name": "Azure Notification Hubs",
+    "description": "Scalable push notification engine for sending notifications to any platform from any backend"
+  },
+  {
+    "name": "Azure Event Grid",
+    "description": "Event routing service enabling event-driven architectures with reliable event delivery"
+  },
+  {
+    "name": "Azure Logic Apps",
+    "description": "Automate workflows integrating apps, data, and services across clouds and on-premises systems"
+  },
+  {
+    "name": "Azure API Management",
+    "description": "Hybrid, multi-cloud management platform for APIs across all environments with security and analytics"
+  },
+  {
+    "name": "Azure Service Bus",
+    "description": "Reliable cloud messaging service for decoupling applications with queues and publish-subscribe topics"
+  },
+  {
+    "name": "Azure Web PubSub",
+    "description": "Build real-time web applications with WebSocket connections for publishing and subscribing to messages"
+  },
+  {
+    "name": "Azure Fluid Relay",
+    "description": "Build collaborative experiences with real-time synchronization of shared state across clients"
+  },
+  {
+    "name": "Azure Health Data Services",
+    "description": "Managed healthcare data platform with FHIR, DICOM, and MedTech services for health data exchange"
+  },
+  {
+    "name": "Azure Data Manager for Energy",
+    "description": "Industry-specific data platform for oil and gas industry with data connectors and domain data models"
+  },
+  {
+    "name": "Azure Data Manager for Agriculture",
+    "description": "Industry-specific data platform bringing together farm data with connectors for agriculture solutions"
+  },
+  {
+    "name": "Azure Monitor",
+    "description": "Comprehensive monitoring solution collecting, analyzing, and acting on telemetry from cloud and on-premises"
+  },
+  {
+    "name": "Azure Advisor",
+    "description": "Personalized cloud consultant analyzing configurations and usage to recommend optimization strategies"
+  },
+  {
+    "name": "Azure Policy",
+    "description": "Govern resources with policy definitions enforcing organizational standards and compliance"
+  },
+  {
+    "name": "Azure Blueprints",
+    "description": "Define repeatable sets of Azure resources implementing organizational standards and patterns"
+  },
+  {
+    "name": "Azure Automation",
+    "description": "Process automation service for configuration management, update management, and task automation"
+  },
+  {
+    "name": "Azure Arc",
+    "description": "Extend Azure management and services to any infrastructure across on-premises, multi-cloud, and edge"
+  },
+  {
+    "name": "Azure Lighthouse",
+    "description": "Manage multiple Azure tenants with enhanced automation, scalability, and governance for service providers"
+  },
+  {
+    "name": "Azure Migrate",
+    "description": "Centralized hub for discovering, assessing, and migrating on-premises workloads to Azure"
+  },
+  {
+    "name": "Azure Site Recovery",
+    "description": "Disaster recovery service orchestrating replication, failover, and failback of virtual machines"
+  },
+  {
+    "name": "Azure Resource Mover",
+    "description": "Move Azure resources across regions, resource groups, and subscriptions"
+  },
+  {
+    "name": "Azure Service Health",
+    "description": "Personalized alerts and guidance when Azure service issues affect your resources"
+  },
+  {
+    "name": "Azure Cost Management",
+    "description": "Monitor, allocate, and optimize cloud spending with budgets, recommendations, and cost analysis"
+  },
+  {
+    "name": "Azure Cloud Shell",
+    "description": "Browser-based shell experience for managing Azure resources with pre-installed tools"
+  },
+  {
+    "name": "Azure Portal",
+    "description": "Web-based unified console for building, managing, and monitoring Azure resources"
+  },
+  {
+    "name": "Azure Mobile App",
+    "description": "Manage Azure resources on-the-go with iOS and Android mobile applications"
+  },
+  {
+    "name": "Azure Managed Applications",
+    "description": "Offer cloud solutions through Azure Marketplace with managed infrastructure for customers"
+  },
+  {
+    "name": "Azure Automanage",
+    "description": "Automated configuration management for virtual machines following Azure best practices"
+  },
+  {
+    "name": "Azure Update Manager",
+    "description": "Unified solution for managing and governing updates for virtual machines across environments"
+  },
+  {
+    "name": "Azure Copilot",
+    "description": "AI-powered assistant helping manage and optimize Azure resources through natural language"
+  },
+  {
+    "name": "Azure Communications Gateway",
+    "description": "Operator connectivity solution for integrating with Microsoft Teams Phone System"
+  },
+  {
+    "name": "Azure Communication Services",
+    "description": "Add voice, video, chat, and SMS capabilities to applications with cloud-native APIs"
+  },
+  {
+    "name": "Azure SignalR Service",
+    "description": "Add real-time web functionality to applications with managed SignalR service"
+  },
+  {
+    "name": "Azure Media Services",
+    "description": "Cloud-based platform for encoding, packaging, protecting, and streaming video content"
+  },
+  {
+    "name": "Azure Content Protection",
+    "description": "Protect streaming media content with digital rights management and encryption"
+  },
+  {
+    "name": "Azure Remote Rendering",
+    "description": "Render high-quality 3D content in the cloud and stream to devices in real-time"
+  },
+  {
+    "name": "Azure Spatial Anchors",
+    "description": "Create multi-user, spatially aware mixed reality experiences across devices"
+  },
+  {
+    "name": "Azure Object Anchors",
+    "description": "Detect and align physical objects in mixed reality applications"
+  },
+  {
+    "name": "Azure Stack Hub",
+    "description": "Run Azure services on-premises from your own datacenter with Azure-consistent infrastructure"
+  },
+  {
+    "name": "Azure Stack HCI",
+    "description": "Hyperconverged infrastructure running virtualized applications and hybrid cloud connections"
+  },
+  {
+    "name": "Azure Stack Edge",
+    "description": "Edge computing device bringing compute, storage, and AI capabilities to the edge"
+  },
+  {
+    "name": "Azure Modular Datacenter",
+    "description": "Rapidly deployable datacenter solution in a ruggedized container for harsh environments"
+  },
+  {
+    "name": "Azure Operator Nexus",
+    "description": "Hybrid cloud platform for deploying mission-critical carrier-grade network functions"
+  },
+  {
+    "name": "Azure Operator Service Manager",
+    "description": "Lifecycle management for complex network service deployment and operations"
+  },
+  {
+    "name": "Azure Programmable Connectivity",
+    "description": "Access network capabilities through standardized APIs for enhanced application experiences"
+  },
+  {
+    "name": "Azure Orbital",
+    "description": "Ground station as a service for communicating with satellites and processing satellite data"
+  },
+  {
+    "name": "Azure CycleCloud",
+    "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale"
+  },
+  {
+    "name": "Azure Compute Fleet",
+    "description": "Simplified provisioning and management of diverse Azure compute capacity at scale"
+  },
+  {
+    "name": "Azure Spot Virtual Machines",
+    "description": "Provision unused Azure compute capacity at significant discounts for interruptible workloads"
+  },
+  {
+    "name": "Azure Container Apps",
+    "description": "Deploy containerized apps without managing infrastructure using serverless containers"
+  },
+  {
+    "name": "Azure Web App for Containers",
+    "description": "Deploy containerized web applications with built-in load balancing and auto-scaling"
+  },
+  {
+    "name": "Azure Kubernetes Fleet Manager",
+    "description": "Manage multiple Kubernetes clusters across regions with centralized configuration"
+  },
+  {
+    "name": "Azure Red Hat OpenShift",
+    "description": "Fully managed OpenShift service jointly engineered and supported by Red Hat and Microsoft"
+  },
+  {
+    "name": "Azure Cloud Services",
+    "description": "Deploy highly-available, scalable cloud applications and services on Azure PaaS"
+  },
+  {
+    "name": "Azure SQL Edge",
+    "description": "Optimized SQL database engine for IoT and edge computing scenarios"
+  },
+  {
+    "name": "Azure Managed Instance for Apache Cassandra",
+    "description": "Fully managed Cassandra service with compatibility for existing Cassandra workloads"
+  },
+  {
+    "name": "Azure Confidential Computing",
+    "description": "Protect data in use with hardware-based trusted execution environments"
+  },
+  {
+    "name": "Azure Avere vFXT",
+    "description": "File system caching for high-performance computing providing faster access to data"
+  },
+  {
+    "name": "Azure Managed Lustre",
+    "description": "Fully managed parallel file system for large-scale HPC workloads"
+  }

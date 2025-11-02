@@ -1,0 +1,6 @@
+list all azure service names and their description
+result should be json format with the following structure:
+
+"""
+{ "name": "service name..", "description": "full service description..." }
+"""
