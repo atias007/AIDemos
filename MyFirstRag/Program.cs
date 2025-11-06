@@ -57,4 +57,6 @@ static async Task Example1BasicRAG(List<VectorChunk> vectors)
     Console.WriteLine($"\nAnswer:\n{response.Answer}");
     Console.WriteLine($"\nUsed {response.RelevantChunks.Count} context chunks");
     Console.WriteLine(new string('=', 80));
+
+    File.WriteAllText(@"c:\temp\answer.txt", response.Answer);
 }
