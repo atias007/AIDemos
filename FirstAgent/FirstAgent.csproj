@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LangChain" Version="0.17.0" />
-    <PackageReference Include="LangChain.Providers.OpenAI" Version="0.17.0" />
+    <PackageReference Include="OpenAI" Version="2.7.0" />
   </ItemGroup>
 
 </Project>

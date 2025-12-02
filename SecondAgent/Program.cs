@@ -6,9 +6,6 @@ using ChatMessage = Microsoft.Extensions.AI.ChatMessage;
 var openAiApiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new ArgumentNullException(); ;
 
 var chatAgent = new OpenAIClient(openAiApiKey).GetChatClient("gpt-4.1").AsIChatClient();
-////var chatAgentOptions = new ChatOptions
-////{
-////};
 
 // Start the conversation with context for the AI model
 List<ChatMessage> chatHistory =
