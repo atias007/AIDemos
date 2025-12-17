@@ -22,7 +22,7 @@ string model = "gpt-4o";
 //await ToolsWithLoggerDemo(key, model);
 //await ToolsWithHumenInTheLoop(key, model);
 //await StructuredResponseDemo1(key, model);
-//await StructuredResponseDemo2(key);
+await StructuredResponseDemo2(key);
 
 static async Task PromptDemo(string key, string model)
 {

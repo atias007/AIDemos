@@ -3,8 +3,7 @@ using OpenAI;
 using System.Text;
 using ChatMessage = Microsoft.Extensions.AI.ChatMessage;
 
-var openAiApiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new ArgumentNullException(); ;
-
+var openAiApiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new ArgumentNullException();
 var chatAgent = new OpenAIClient(openAiApiKey).GetChatClient("gpt-4.1").AsIChatClient();
 
 // Start the conversation with context for the AI model
@@ -37,8 +36,8 @@ while (true)
     // Stream the AI response and add to chat history
     Console.WriteLine("-- AI Response:");
     var response = new StringBuilder();
-    await foreach (ChatResponseUpdate item in
-        chatAgent.GetStreamingResponseAsync(chatHistory))
+    var agentResponse = chatAgent.GetStreamingResponseAsync(chatHistory);
+    await foreach (ChatResponseUpdate item in agentResponse)
     {
         Console.Write(item.Text);
         response.Append(item.Text);
