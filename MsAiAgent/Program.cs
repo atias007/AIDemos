@@ -18,11 +18,11 @@ string model = "gpt-4o";
 //await ImageDemo(key, model);
 //await ThreadDemo(key, model);
 //await ToolsDemo(key, model);
-//await AdvanceToolsDemo(key, model);
+await AdvanceToolsDemo(key, model);
 //await ToolsWithLoggerDemo(key, model);
 //await ToolsWithHumenInTheLoop(key, model);
 //await StructuredResponseDemo1(key, model);
-await StructuredResponseDemo2(key);
+//await StructuredResponseDemo2(key);
 
 static async Task PromptDemo(string key, string model)
 {
@@ -150,9 +150,9 @@ static async Task ToolsWithHumenInTheLoop(string key, string model)
 
 static async Task AdvanceToolsDemo(string key, string model)
 {
-    Console.WriteLine("load mcp server...");
+    Console.WriteLine("load mcp client...");
 
-    #region 1. Add MCP Server
+    #region 1. Add MCP Client
 
     await using McpClient mcpClient1 = await McpClient.CreateAsync(
             new StdioClientTransport(new()
@@ -164,7 +164,7 @@ static async Task AdvanceToolsDemo(string key, string model)
 
     var tools = await mcpClient1.ListToolsAsync();
 
-    #endregion 1. Add MCP Server
+    #endregion 1. Add MCP Client
 
     #region 2. Print tools from MCP Server
 
@@ -198,7 +198,8 @@ static async Task AdvanceToolsDemo(string key, string model)
        .GetChatClient(model)
        .CreateAIAgent("you are git assistance", tools: [.. agentTools]);
 
-    Console.WriteLine(await agent.RunAsync(@"Summarize the last 2 commits as local folder c:\planar"));
+    var response = await agent.RunAsync(@"Summarize the last 2 commits as local folder c:\planar");
+    Console.WriteLine(response);
 }
 
 static async Task StructuredResponseDemo1(string key, string model)
