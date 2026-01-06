@@ -53,6 +53,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWorkflow", "SimpleWorkflow\SimpleWorkflow.csproj", "{83EECBD0-445C-4DB2-B7FD-D61870869AE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLDemo1", "MLDemo1\MLDemo1.csproj", "{1108B56C-2C16-4858-BCB7-8430968B5D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLDemo2", "MLDemo2\MLDemo2.csproj", "{AB0D2157-ABC6-487B-89AB-D6DB7E35C55A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +131,14 @@ Global
 		{83EECBD0-445C-4DB2-B7FD-D61870869AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83EECBD0-445C-4DB2-B7FD-D61870869AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83EECBD0-445C-4DB2-B7FD-D61870869AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1108B56C-2C16-4858-BCB7-8430968B5D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1108B56C-2C16-4858-BCB7-8430968B5D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1108B56C-2C16-4858-BCB7-8430968B5D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1108B56C-2C16-4858-BCB7-8430968B5D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0D2157-ABC6-487B-89AB-D6DB7E35C55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0D2157-ABC6-487B-89AB-D6DB7E35C55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0D2157-ABC6-487B-89AB-D6DB7E35C55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0D2157-ABC6-487B-89AB-D6DB7E35C55A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
