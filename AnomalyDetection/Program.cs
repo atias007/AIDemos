@@ -9,7 +9,8 @@ Console.OutputEncoding = Encoding.UTF8;
 
 // AnomalyDetector.Demo();
 
-AnomalyDetectorUtil.DemoSpike2();
+// AnomalyDetectorUtil.DemoSpike();
+AnomalyDetectorUtil.DemoChangePoint();
 return;
 ChartDemo();
 

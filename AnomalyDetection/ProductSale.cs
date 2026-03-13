@@ -116,7 +116,7 @@ internal class ProductSale
 public class ProductSalesData
 {
     [LoadColumn(0)]
-    public string Month;
+    public string? Month;
 
     [LoadColumn(1)]
     public float numSales;

@@ -5,10 +5,13 @@ using Microsoft.Extensions.Logging.Console;
 using ModelContextProtocol.Client;
 using MsAiAgent;
 using OpenAI;
+using OpenAI.Chat;
 using OpenAI.Responses;
 using System.Net.Mime;
 using System.Net.NetworkInformation;
 using System.Text.Json;
+using ChatMessage = Microsoft.Extensions.AI.ChatMessage;
+using ChatResponseFormat = Microsoft.Extensions.AI.ChatResponseFormat;
 
 string key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new InvalidDataException("api key is null");
 string model = "gpt-4o";
@@ -22,13 +25,13 @@ await AdvanceToolsDemo(key, model);
 //await ToolsWithLoggerDemo(key, model);
 //await ToolsWithHumenInTheLoop(key, model);
 //await StructuredResponseDemo1(key, model);
-//await StructuredResponseDemo2(key);
+//await StructuredResponseDemo2(key, model);
 
 static async Task PromptDemo(string key, string model)
 {
-    AIAgent agent = new OpenAIClient(key)
+    var agent = new OpenAIClient(key)
         .GetChatClient(model)
-        .CreateAIAgent("you are proffesional joke teller");
+        .AsAIAgent("you are proffesional joke teller");
 
     var response = await agent.RunAsync("Tell me joke about pirate");
     Console.WriteLine(response);
@@ -36,7 +39,7 @@ static async Task PromptDemo(string key, string model)
 
 static async Task ChatDemo(string key, string model)
 {
-    var systemMessage = new ChatMessage(ChatRole.System,
+    var systemMessage = new Microsoft.Extensions.AI.ChatMessage(ChatRole.System,
         """
         If the user ask you to tell a joke, refuse to do so, explain that you are not a clown.
         Offer the user as intresting fact about astronomy instead.
@@ -47,7 +50,7 @@ static async Task ChatDemo(string key, string model)
 
     AIAgent agent = new OpenAIClient(key)
         .GetChatClient(model)
-        .CreateAIAgent("you are proffesional joke teller");
+        .AsAIAgent("you are proffesional joke teller");
 
     var responseStream = agent.RunStreamingAsync(messages);
     await foreach (var item in responseStream)
@@ -60,7 +63,7 @@ static async Task ImageDemo(string key, string model)
 {
     AIAgent agent = new OpenAIClient(key)
         .GetChatClient(model)
-        .CreateAIAgent("you are helpful agent that can analyze images");
+        .AsAIAgent("you are helpful agent that can analyze images");
 
     var message = new ChatMessage(ChatRole.User,
         [
@@ -75,9 +78,9 @@ static async Task ThreadDemo(string key, string model)
 {
     AIAgent agent = new OpenAIClient(key)
        .GetChatClient(model)
-       .CreateAIAgent("you are proffesional joke teller");
+       .AsAIAgent("you are proffesional joke teller");
 
-    var thread1 = agent.GetNewThread();
+    var thread1 = await agent.CreateSessionAsync();
     Console.WriteLine(await agent.RunAsync("Tell me a joke about c# developer", thread1));
     Console.WriteLine("----------------");
     Console.WriteLine(await agent.RunAsync("now add some emojis to the joke and tell it in the voice of robot", thread1));
@@ -88,7 +91,7 @@ static async Task ToolsDemo(string key, string model)
     Console.WriteLine("thinking...");
     AIAgent agent = new OpenAIClient(key)
        .GetChatClient(model)
-       .CreateAIAgent("you are helful assistant", tools: Tools.AiFunctions);
+       .AsAIAgent("you are helful assistant", tools: Tools.AiFunctions);
 
     Console.WriteLine(await agent.RunAsync("What is the weather like in New York"));
 }
@@ -109,7 +112,7 @@ static async Task ToolsWithLoggerDemo(string key, string model)
     Console.WriteLine("thinking...");
     AIAgent agent = new OpenAIClient(key)
        .GetChatClient(model)
-       .CreateAIAgent("you are helful assistant", tools: Tools.AiFunctions, loggerFactory: loggerFactory);
+       .AsAIAgent("you are helful assistant", tools: Tools.AiFunctions, loggerFactory: loggerFactory);
 
     Console.WriteLine(await agent.RunAsync("What is the weather like in New York"));
 }
@@ -122,9 +125,9 @@ static async Task ToolsWithHumenInTheLoop(string key, string model)
     Console.WriteLine("thinking...");
     AIAgent agent = new OpenAIClient(key)
        .GetChatClient(model)
-       .CreateAIAgent("you are helful assistant", tools: [tool]);
+       .AsAIAgent("you are helful assistant", tools: [tool]);
 
-    var thread = agent.GetNewThread();
+    var thread = await agent.CreateSessionAsync();
     var response = await agent.RunAsync("What is the weather like in Tel Aviv", thread);
 
     // -------- //
@@ -196,7 +199,7 @@ static async Task AdvanceToolsDemo(string key, string model)
     Console.WriteLine("thinking...");
     AIAgent agent = new OpenAIClient(key)
        .GetChatClient(model)
-       .CreateAIAgent("you are git assistance", tools: [.. agentTools]);
+       .AsAIAgent("you are git assistance", tools: [.. agentTools]);
 
     var response = await agent.RunAsync(@"Summarize the last 2 commits as local folder c:\planar");
     Console.WriteLine(response);
@@ -206,7 +209,7 @@ static async Task StructuredResponseDemo1(string key, string model)
 {
     AIAgent agent = new OpenAIClient(key)
         .GetChatClient(model)
-        .CreateAIAgent("you are helpful agent that can analyze images and extract text from image");
+        .AsAIAgent("you are helpful agent that can analyze images and extract text from image");
 
     var image = File.ReadAllBytes(@"c:\temp\image2.jpg");
     var message = new ChatMessage(ChatRole.User,
@@ -229,6 +232,7 @@ static async Task StructuredResponseDemo2(string key)
 {
     var options = new ChatOptions
     {
+        Instructions = "you are helpful agent that can analyze images and extract text from image.",
         MaxOutputTokens = 1000,
         ResponseFormat = ChatResponseFormat.ForJsonSchema(
             schema: IdInfo.Schema,
@@ -240,13 +244,12 @@ static async Task StructuredResponseDemo2(string key)
     var chatOptions = new ChatClientAgentOptions
     {
         Name = "helpful assistant",
-        Instructions = "you are helpful agent that can analyze images and extract text from image.",
-        ChatOptions = options
+        ChatOptions = options,
     };
 
     AIAgent agent = new OpenAIClient(key)
         .GetChatClient("gpt-5")
-        .CreateAIAgent(chatOptions);
+        .AsAIAgent(chatOptions);
 
     var image = File.ReadAllBytes(@"c:\temp\image2.jpg");
 
@@ -264,6 +267,6 @@ static async Task StructuredResponseDemo2(string key)
 
     var response = await agent.RunAsync(message);
 
-    var idInfo = response.Deserialize<IdInfo>(JsonSerializerOptions.Web);
+    var idInfo = JsonSerializer.Deserialize<IdInfo>(response.Text, JsonSerializerOptions.Web);
     Console.WriteLine(idInfo);
 }
